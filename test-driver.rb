@@ -103,13 +103,13 @@ test_class_injection = false
 if(test_class_injection)
   dex_file = DexFile.new 'resources/apkcrypt.dex', true
   dex_file.nerf_header_size 6880, 'resources/release-crackme-classes.dex'
-  dex_file.nerf_link_section
   dex_file.save_modified 'dexception-injection.test'
   DexFile.new 'dexception-injection.test', true
 end
 
 test_nerf_link_section = false
 if(test_nerf_link_section)
+  dex_file.nerf_header_size 112
   dex_file.nerf_link_section
   dex_file.save_modified 'linked_section_nerf.test'
   # reload the nerf test to ensure we didn't kill something
