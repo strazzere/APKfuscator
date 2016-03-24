@@ -12,7 +12,4 @@ It is not properly tested, hacked together rather fast, should not be relied upo
 
 Released under AGPL
 
-Tim Strazzere
-strazz@gmail.com
-tim.strazzere@mylookout.com
-Lookout Mobile Security
+Tim Strazzere (strazz@gmail.com)
